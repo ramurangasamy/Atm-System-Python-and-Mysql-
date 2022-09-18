@@ -1,0 +1,11 @@
+create database banking_system;
+use banking_system; 
+CREATE TABLE bank (
+	id	int primary key auto_increment,
+	username varchar(52) NOT NULL UNIQUE,
+	pin	int NOT NULL,
+	amount	float NOT NULL DEFAULT 1252.00,
+	phone	long NOT NULL,
+	email	varchar(120),
+	address	varchar(225) NOT NULL
+);
